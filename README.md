@@ -11,7 +11,9 @@ I made a little GUI app that has stored verses from the book in a text file. Eac
 
 The method I used to grab the random lines was apparently more efficient because the first way I wrote it seemed to use the line length as part of the decision in determining the random line choice. What was happening is only the mid-range length verses were being favoured or displayed. The longer and shorter lines were not coming up very often - it almost seemed non-random. So I had a little read around and tried a few ways, and so far this way seems the better choice.
 
-There are 50 verses entered into the text file, and maybe over time I will add more. When I selected verses to display I tried to not go for the epic page long ones, because the whole verse is stored into a single line in the text file, and although I tried, I couldn't split up the strings to make them appear visually nicer on the eye - using \n or """ escape sequences. 
+There are 50 verses entered into the text file, and maybe over time I will add more. When I selected verses to display I tried to not go for the epic page long ones, because the whole verse is stored into a single line in the text file, and although I tried, I couldn't split up the strings to make them appear visually nicer on the eye - using \n or """ escape sequences. At the moment the GUI is used for  selecting a New verse, and the verse is displayed in the Shell (it was a bit dense for the GUI window) all crammed onto a line can appear a bit too compressed so I know this needs a bit of tweaking.
+
+As I learn more about strings and manipulating a string after pulling it from a text file, I will add the techniques to the cose.
 
 I didn't have much luck with that and I want to try and see if a resolution could be found in storing the verses in a .py not a .txt - maybe string manipulation will be possible then.
 
@@ -20,5 +22,5 @@ I didn't have much luck with that and I want to try and see if a resolution coul
 Each one was a seperate repo so they probably have their own readme's in each as-well
 
 1st version was totally text based. Was used to figure out the function I was going to use to pull the lines at random - for testing.
-2nd version added it into Tkinter with a nice Japanese picture/theme
+2nd version added it into Tkinter with a nice GUI with the information abouth the book
 3rd version (my favourite) adds the Ghost Dog theme to the GUI, using the Hakagure Black and Red Symbol
